@@ -1,1776 +1,224 @@
-<html xmlns:fb="http://www.facebook.com/2008/fbml" class=""><head>
-    <title>The Young Astronauts</title>
-    <!-- include meta tags -->
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width = device-width, initial-scale = .5, user-scalable = no">
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-    <link rel="icon" type="image/x-icon" href="https://theyoungastronauts.com/favicon.ico">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-    <link rel="icon" type="image/png" href="https://theyoungastronauts.com/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="logo114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="logo72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="logo57.png">
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-    <!-- for Google -->
-    <meta name="description" content="The Young Astronauts creates digital experiences for brand engagement. We believe that brands who reach their audiences through creative technology are sure to gain loyalty, memorability, and overall strength. We take a strategy-first approach in our work by combining user research with human-centered design to craft unique experiences. Then we use our proven software development process to build an engaging product that works.">
-    <meta name="keywords" content="digital agency web development toronto canada interactive">
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
+    <p>Photographer and Web Designer.</p>
+    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
-    <meta name="author" content="The Young Astronauts Inc.">
-    <meta name="copyright" content="2018 The Young Astronauts Corp.">
-    <meta name="application-name" content="The Young Astronauts Inc.">
-
-    <!-- for Facebook -->
-    <meta property="og:title" content="The Young Astronauts">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="http://s3.amazonaws.com/YA2014/logo.gif">
-    <meta property="og:url" content="http://theyoungastronauts.com">
-    <meta property="og:description" content="The Young Astronauts creates digital experiences for brand engagement. We believe that brands who reach their audiences through creative technology are sure to gain loyalty, memorability, and overall strength. We take a strategy-first approach in our work by combining user research with human-centered design to craft unique experiences. Then we use our proven software development process to build an engaging product that works.">
-
-    <!-- for Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="The Young Astronauts">
-    <meta name="twitter:description" content="The Young Astronauts creates digital experiences for brand engagement. We believe that brands who reach their audiences through creative technology are sure to gain loyalty, memorability, and overall strength. We take a strategy-first approach in our work by combining user research with human-centered design to craft unique experiences. Then we use our proven software development process to build an engaging product that works.">
-    <meta name="twitter:image" content="http://s3.amazonaws.com/YA2014/logo.gif">
-
-
-    <link rel="stylesheet" type="text/css" href="build/css/all.min.css?v=2.8">
-
-
-</head>
-
-<body>
-
-    <div class="header" style="width: 535px;">
-
-        <div class="top">
-            <div class="home">
-            	<div class="black-bg"></div>
-            	<div class="black-bg-lower"></div>
-                              <a href="/" title="home"><img src="images/logo-home-r.png"></a>
-                          </div>
-<!-- .MAIN-MENU          -->
-
-            <span id="main-title"><span></span><span></span><span></span>The Young Astronauts</span>
-
-
-
-
-        </div>
-<!-- /.MAIN-MENU -->
-
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-    <div class="container" style="height: 772px;"><ul class="grid" style="height: 772px; width: 535px; top: 0px; transition-duration: 0.5s;"><li class="row" id="row-0" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell current" id="cell-0-0" style="background: rgb(0, 0, 0); width: 535px; height: 772px;"><div class="slide" id="overview">
-	<div class="cover" style="background-color: rgb(0, 0, 0); height: 772px;">
-
-		<div class="background-container" style="background:url(https://s3.amazonaws.com/cdn.theyoungastronauts.com/home/home3.jpg) no-repeat center center; background-size:cover;"></div>
-
-		<div class="keys">
-			<div class="key-icons"></div>
-			<div class="msg">Use arrow keys to navigate</div>
-		</div>
-
-		<div class="tagline">
-			<span style="color:#cf3937;">+</span> An <strong>interactive media production company.</strong><br>
-			<span style="color:#5e95c5;">+</span> A collective of innovative artists and engineers.<br>
-			<span style="color:#d4ca27;">+</span> A team dedicated to pushing the boundaries<br>&nbsp;&nbsp;of the unknown.<br>
-		</div>
-
-	</div>
-</div>
-</li></ul></li><li class="row" id="row-1" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-1-0" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap featured">
-
-			<div id="featured-image-container">
-				<a target="_blank" href="https://makeyourdrake.com/">
-					<img src="/images/featured/makeyourdrake.jpg" class="featured-preview">
-				</a>
-
-				<div class="featured-copy">
-					<p class="featured-copy-big"><a target="_blank" href="https://makeyourdrake.com/" style="color:white; text-decoration:none;">MakeYourDrake.com</a></p>
-					<!-- <p class="featured-copy-big">2 Gold Clios</p>
-					<p>In Social Media &amp; Digital/Mobile</p> -->
-				</div>
-
-			</div>
-
-            <!-- <h1>Featured Project</h1>
-            <h3>"Petting Scorpions"</h3> -->
-            <!-- <div id="featured-video-container">
-                <img src="/images/petting-scorpions.jpg" class="featured-preview" />
-                <div id="featured-video-play"></div>
-            </div> -->
-            <script>
-
-                // function initFeature() {
-                //     window.featuredVideoContent = document.getElementById('featured-video-container').innerHTML;
-                //     window.featuredVideoPlaying = false;
-                //     var iframe = '<iframe width="920" height="517" src="https://www.youtube.com/embed/zU13Ql0HRJc?autoplay=1" frameborder="0" allowfullscreen></iframe>';
-                //     document.getElementById('featured-video-play').onclick = function() {
-                //         document.getElementById('featured-video-container').innerHTML = iframe;
-                //         window.featuredVideoPlaying = true;
-                //     }
-                // }
-                // initFeature();
-            </script>
-        </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-</div>
-</li></ul></li><li class="row" id="row-2" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-2-0" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-99"></div>
-				<div class="subtitle" id="player-subtitle-99">Interactive Reel</div>
-
-				<div id="video_99" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/212943861?app_id=122963" width="900" height="506" frameborder="0" title="120417 - Interactive Demo Reel" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 99] = new Vimeo.Player('video_99', {id: 212943861, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 99].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 99].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li><li class="cell" id="cell-2-1" style="width: 535px; height: 772px;"><div class="slide">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-			<div class="cover-bg">
-				<video class="cover-video" width="100%" height="100%" preload="meta" data-w="1280" data-h="720" style="width: auto; height: 717px; margin-top: 0px; margin-left: -369.5px;">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.webm" type="video/webm">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.mp4" type="video/mp4">
-
-					<img src="videos/cover.jpg">
-				</video>
-			</div>
-
-			<div class="overview-container">
-				<div class="overview-image" style="background-image:url(/images/interactive/wantfolio-0.jpg);">
-					<h3>Wantfolio</h3>
-					<p>A fresh new website and app for wantfolio.</p>
-				</div>
-				<div class="overview-info">
-					<div class="info-box">
-						<h4>Client</h4>
-						<p>Wanfolio Group Inc.</p>
-					</div>
-					<div class="info-box">
-						<h4>Our Role</h4>
-						<p>Design, Frontend, Backend, Mobile</p>
-					</div>
-					<div class="info-box">
-						<h4>Platforms</h4>
-						<p>Desktop, iOS, Android</p>
-					</div>
-					<div class="info-box">
-						<a class="launch-button" href="http://wantfolio.com/" target="_blank">Launch <span></span></a>
-					</div>
-				</div>
-
-			</div>
-
-
-		</div>
-	</div>
-</div>
-</li><li class="cell" id="cell-2-2" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/wantfolio-1.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-3" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/wantfolio-2.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-4" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/wantfolio-3.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-5" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/wantfolio-4.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-6" style="width: 535px; height: 772px;"><div class="slide">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-			<div class="cover-bg">
-				<video class="cover-video" width="100%" height="100%" preload="meta" data-w="1280" data-h="720" style="width: auto; height: 717px; margin-top: 0px; margin-left: -369.5px;">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.webm" type="video/webm">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.mp4" type="video/mp4">
-
-					<img src="videos/cover.jpg">
-				</video>
-			</div>
-
-			<div class="overview-container">
-				<div class="overview-image" style="background-image:url(/images/interactive/drakesviews-0.jpg);">
-					<h3>Drake's Views</h3>
-					<p>Viral meme generator.</p>
-				</div>
-				<div class="overview-info">
-					<div class="info-box">
-						<h4>Client</h4>
-						<p>-</p>
-					</div>
-					<div class="info-box">
-						<h4>Our Role</h4>
-						<p>Design, Frontend, Backend, Mobile</p>
-					</div>
-					<div class="info-box">
-						<h4>Platforms</h4>
-						<p>Desktop, Mobile</p>
-					</div>
-					<div class="info-box">
-						<a class="launch-button" href="http://drakesviews.com/" target="_blank">Launch <span></span></a>
-					</div>
-				</div>
-
-			</div>
-
-
-		</div>
-	</div>
-</div>
-</li><li class="cell" id="cell-2-7" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/drakesviews-1.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-8" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/drakesviews-2.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-9" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/drakesviews-3.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-10" style="width: 535px; height: 772px;"><div class="slide">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-			<div class="cover-bg">
-				<video class="cover-video" width="100%" height="100%" preload="meta" data-w="1280" data-h="720" style="width: auto; height: 717px; margin-top: 0px; margin-left: -369.5px;">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.webm" type="video/webm">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.mp4" type="video/mp4">
-
-					<img src="videos/cover.jpg">
-				</video>
-			</div>
-
-			<div class="overview-container">
-				<div class="overview-image" style="background-image:url(/images/interactive/myseum-0.jpg);">
-					<h3>Myseum</h3>
-					<p>Mobile App + Website.</p>
-				</div>
-				<div class="overview-info">
-					<div class="info-box">
-						<h4>Client</h4>
-						<p>Myseum of Toronto</p>
-					</div>
-					<div class="info-box">
-						<h4>Our Role</h4>
-						<p>Design, Frontend, Backend, Mobile</p>
-					</div>
-					<div class="info-box">
-						<h4>Platforms</h4>
-						<p>Desktop, Mobile</p>
-					</div>
-					<div class="info-box">
-						
-					</div>
-				</div>
-
-			</div>
-
-
-		</div>
-	</div>
-</div>
-</li><li class="cell" id="cell-2-11" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/myseum-1.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-12" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/myseum-2.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-13" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/myseum-3.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-14" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/web-1.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-15" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/web-2.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-16" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/web-3.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-17" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/web-4.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-18" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/web-5.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-19" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/games-1.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-20" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/games-2.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-2-21" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/interactive/games-3.jpg">
-
-        </div>
-    </div>
-</div>
-</li></ul></li><li class="row" id="row-3" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-3-0" style="width: 535px; height: 772px;"><div class="slide">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-			<div class="cover-bg">
-				<video class="cover-video" width="100%" height="100%" preload="meta" data-w="1280" data-h="720" style="width: auto; height: 717px; margin-top: 0px; margin-left: -369.5px;">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.webm" type="video/webm">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.mp4" type="video/mp4">
-
-					<img src="videos/cover.jpg">
-				</video>
-			</div>
-
-			<div class="overview-container">
-				<div class="overview-image" style="background-image:url(/images/creative/ariana-0.jpg);">
-					<h3>Ariana Grande</h3>
-					<p>Creative Management for Ariana Grande.</p>
-				</div>
-				<div class="overview-info">
-					<div class="info-box">
-						<h4>Client</h4>
-						<p>Republic Records</p>
-					</div>
-					<div class="info-box">
-						<h4>Our Role</h4>
-						<p>Creative Management</p>
-					</div>
-					<div class="info-box">
-						<h4>Platforms</h4>
-						<p>Web, Marketing, Music Videos, Album Artwork</p>
-					</div>
-					<div class="info-box">
-						<a class="launch-button" href="http://dangerouswoman.com/" target="_blank">Launch <span></span></a>
-					</div>
-				</div>
-
-			</div>
-
-
-		</div>
-	</div>
-</div>
-</li><li class="cell" id="cell-3-1" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/ariana-1.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-2" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/ariana-2.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-3" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/ariana-3.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-4" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/ariana-4.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-5" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/ariana-5.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-6" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/ariana-6.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-7" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/ariana-7.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-8" style="width: 535px; height: 772px;"><div class="slide">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-			<div class="cover-bg">
-				<video class="cover-video" width="100%" height="100%" preload="meta" data-w="1280" data-h="720" style="width: auto; height: 717px; margin-top: 0px; margin-left: -369.5px;">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.webm" type="video/webm">
-					<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/cover-bg.mp4" type="video/mp4">
-
-					<img src="videos/cover.jpg">
-				</video>
-			</div>
-
-			<div class="overview-container">
-				<div class="overview-image" style="background-image:url(/images/creative/schittscreek-0.jpg);">
-					<h3>Schitt's Creek</h3>
-					<p>Marketing and Advertising for CBC's Schitt's Creek</p>
-				</div>
-				<div class="overview-info">
-					<div class="info-box">
-						<h4>Client</h4>
-						<p>CBC &amp;amp; PopTV</p>
-					</div>
-					<div class="info-box">
-						<h4>Our Role</h4>
-						<p>Marketing</p>
-					</div>
-					<div class="info-box">
-						<h4>Platforms</h4>
-						<p>Strategy, Design, Marketing, Video</p>
-					</div>
-					<div class="info-box">
-						
-					</div>
-				</div>
-
-			</div>
-
-
-		</div>
-	</div>
-</div>
-</li><li class="cell" id="cell-3-9" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/schittscreek-1.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-10" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/schittscreek-2.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-11" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/schittscreek-3.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-12" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/schittscreek-4.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-13" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/schittscreek-5.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-14" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/schittscreek-6.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-15" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/schittscreek-7.jpg">
-
-        </div>
-    </div>
-</div>
-</li><li class="cell" id="cell-3-16" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap">
-
-            <img src="/images/creative/schittscreek-8.jpg">
-
-        </div>
-    </div>
-</div>
-</li></ul></li><li class="row" id="row-4" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-4-0" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-1">The Young Astronauts</div>
-				<div class="subtitle" id="player-subtitle-1">Demo Reel</div>
-
-				<div id="video_1" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/179090288?app_id=122963" width="900" height="506" frameborder="0" title="The Young Astronauts 2017 Reel" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 1] = new Vimeo.Player('video_1', {id: 179090288, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 1].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 1].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li><li class="cell" id="cell-4-1" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-2">Ariana Grande</div>
-				<div class="subtitle" id="player-subtitle-2">Problem</div>
-
-				<div id="video_2" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/211319678?app_id=122963" width="900" height="506" frameborder="0" title="Ariana Grande - Problem ft. Iggy Azalea" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 2] = new Vimeo.Player('video_2', {id: 211319678, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 2].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 2].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li><li class="cell" id="cell-4-2" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-4">Janelle Monáe</div>
-				<div class="subtitle" id="player-subtitle-4">Heroes</div>
-
-				<div id="video_4">
-
-					<iframe width="900" height="506" src="https://www.youtube.com/embed/3HS6Jh3O6r4?controls=1&amp;enablejsapi=1&amp;showinfo=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;playerapiid=Youtube_4" frameborder="0" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
-				</div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-
-
-
-	App.youtubePlayers['player_4'] = {};
-	App.youtubePlayers['player_4']['iframe'] = $("#youtube_iframe_4");
-
-	window['onStateChangeYoutube_4'] = function(event) {
-		window.focus();
-	}
-
-
-</script>
-</li><li class="cell" id="cell-4-3" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-5">Ariana Grande</div>
-				<div class="subtitle" id="player-subtitle-5">Right There</div>
-
-				<div id="video_5">
-
-					<iframe width="900" height="506" src="https://www.youtube.com/embed/fhcpubAVdmc?controls=1&amp;enablejsapi=1&amp;showinfo=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;playerapiid=Youtube_5" frameborder="0" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
-				</div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-
-
-
-	App.youtubePlayers['player_5'] = {};
-	App.youtubePlayers['player_5']['iframe'] = $("#youtube_iframe_5");
-
-	window['onStateChangeYoutube_5'] = function(event) {
-		window.focus();
-	}
-
-
-</script>
-</li><li class="cell" id="cell-4-4" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-10">Jack &amp; Jack</div>
-				<div class="subtitle" id="player-subtitle-10">All Weekend Long</div>
-
-				<div id="video_10">
-
-					<iframe width="900" height="506" src="https://www.youtube.com/embed/iHdRDD6Zo4U?controls=1&amp;enablejsapi=1&amp;showinfo=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;playerapiid=Youtube_10" frameborder="0" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
-				</div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-
-
-
-	App.youtubePlayers['player_10'] = {};
-	App.youtubePlayers['player_10']['iframe'] = $("#youtube_iframe_10");
-
-	window['onStateChangeYoutube_10'] = function(event) {
-		window.focus();
-	}
-
-
-</script>
-</li><li class="cell" id="cell-4-5" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-12">Flosstradamus, GTA &amp; Lil Jon</div>
-				<div class="subtitle" id="player-subtitle-12">Prison Riot</div>
-
-				<div id="video_12">
-
-					<iframe width="900" height="506" src="https://www.youtube.com/embed/OcvunrplrZc?controls=1&amp;enablejsapi=1&amp;showinfo=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;disablekb=1&amp;playerapiid=Youtube_12" frameborder="0" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
-				</div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-
-
-
-	App.youtubePlayers['player_12'] = {};
-	App.youtubePlayers['player_12']['iframe'] = $("#youtube_iframe_12");
-
-	window['onStateChangeYoutube_12'] = function(event) {
-		window.focus();
-	}
-
-
-</script>
-</li><li class="cell" id="cell-4-6" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-3">Schitt's Creek</div>
-				<div class="subtitle" id="player-subtitle-3">TV Commercial</div>
-
-				<div id="video_3" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/210975098?app_id=122963" width="900" height="506" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 3] = new Vimeo.Player('video_3', {id: 210975098, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 3].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 3].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li><li class="cell" id="cell-4-7" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-7">Teenage Mutant Ninja Turtles</div>
-				<div class="subtitle" id="player-subtitle-7">TV Commercial</div>
-
-				<div id="video_7" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/210996123?app_id=122963" width="900" height="506" frameborder="0" title="TMNT Commercial" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 7] = new Vimeo.Player('video_7', {id: 210996123, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 7].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 7].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li><li class="cell" id="cell-4-8" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-6">Blasters of the Universe</div>
-				<div class="subtitle" id="player-subtitle-6">VR Game Trailer</div>
-
-				<div id="video_6" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/210996887?app_id=122963" width="900" height="506" frameborder="0" title="Blasters Trailer" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 6] = new Vimeo.Player('video_6', {id: 210996887, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 6].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 6].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li><li class="cell" id="cell-4-9" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-8">City Seed</div>
-				<div class="subtitle" id="player-subtitle-8">Start-up Explanatory Animation</div>
-
-				<div id="video_8" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/210998304?app_id=122963" width="900" height="506" frameborder="0" title="City Seed Animation" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 8] = new Vimeo.Player('video_8', {id: 210998304, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 8].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 8].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li><li class="cell" id="cell-4-10" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-9">Cancer Bats</div>
-				<div class="subtitle" id="player-subtitle-9">Album Promo Video</div>
-
-				<div id="video_9" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/210999232?app_id=122963" width="900" height="506" frameborder="0" title="Cancer Bats" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 9] = new Vimeo.Player('video_9', {id: 210999232, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 9].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 9].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li><li class="cell" id="cell-4-11" style="width: 535px; height: 772px;"><div class="slide basic">
-	<div class="cover" style="height: 772px;">
-		<div class="wrap media">
-            <div class="media-video-container">
-
-				<div class="title" id="player-title-11">Lonely Comet</div>
-				<div class="subtitle" id="player-subtitle-11">Short Film</div>
-
-				<div id="video_11" data-vimeo-initialized="true">
-				<iframe src="https://player.vimeo.com/video/210999655?app_id=122963" width="900" height="506" frameborder="0" title="The Lonely Comet" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_' + 11] = new Vimeo.Player('video_11', {id: 210999655, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_' + 11].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-
-
-	App.vimeoPlayers['player_' + 11].on('play', function() {
-		window.focus();
-	});
-
-
-
-
-
-</script>
-</li></ul></li><li class="row" id="row-5" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-5-0" style="width: 535px; height: 772px;"><div class="slide" id="services-page">
-
-	<div class="cover" style="height: 772px;">
-
-		<div class="services-top" style="height: 386px;">
-			<div class="services-copy" id="services-copy-overview">
-
-
-
-				<p class="services-title">The Young Astronauts</p>
-				<!--<p>One small step for your company, one giant leap for your brand. </p>-->
-				<p>We are an interactive media production company that helps artists and clients create exciting sites, products, and content through our creative digital work and vast knowledge of the multimedia universe. We provide technical and aesthetic strategies that bridge all forms of media and blend them seamlessly, from conception all the way through to launch. </p>
-
-			</div>
-
-			<div class="services-copy" id="services-copy-design">
-
-				<div class="services-abstract">
-					<img src="/images/services/design.gif">
-				</div>
-
-				Whether it's a new logo, the look and feel of a website, or an entirely new brand, we always present clients with work that pushes the boundaries of digital and visual space. When we create, we're always conscious of a design’s context within both the online and physical universe.
-			</div>
-
-			<div class="services-copy" id="services-copy-media">
-
-				<div class="services-abstract">
-					<img src="/images/services/media.gif" style="margin-top:40px">
-				</div>
-
-				The global team of talented and experienced artists in our orbit ensures that we surpass the competition on any video or photography project. We make sure that our employees are experts in every field - whether that means our roster of acclaimed directors or our network of award-winning designers.
-			</div>
-
-			<div class="services-copy" id="services-copy-interactive">
-
-				<div class="services-abstract" id="services-abstract-interactive">
-					<img src="/images/services/interactive.gif">
-				</div>
-
-				The YA workflow makes use of the newest open-source technologies, which allows for a focus on innovation, not mundane tasks. Whether you need an app, game, website, or interactive video, we will deliver online experiences that promise to take you where no user has gone before.
-			</div>
-
-			<div class="services-copy" id="services-copy-strategy">
-
-				<div class="services-abstract">
-					<img src="/images/services/strategy4.gif">
-				</div>
-
-				It's common that clients know they want to take a small step for their company, but accomplish a giant leap for their brand. YA can always propose a unique solution that will attract more visitors, make tasks more efficient, or simply get you on the map. Our multifaceted team draws from a vast array of backgrounds and experience to help offer diverse ideas and solutions for any interactive or media adventure.
-			</div>
-		</div>
-
-		<div class="services-bottom" style="height: 386px;">
-
-			<div class="wrap clearfix">
-
-				<div class="column strategy" rel="strategy" data-gs-title="strategy">
-
-					<ul>
-						<li class="title" style="margin-bottom: 38.5px;"><span style="color:#000">+</span> Strategy</li>
-
-
-						<li>- Digital Strategy</li>
-						<li>- Brand Strategy</li>
-						<li>- Social Media Management &amp; Strategy</li>
-						<li>- Traditional Advertising Campaigns</li>
-						<li>- Live Events</li>
-						<li>- Product Development</li>
-						<li>- Usability Research</li>
-						<li>- Content Strategy</li>
-					</ul>
-
-
-
-				</div>
-
-				<div class="column interactive" rel="interactive" data-gs-title="interactive">
-
-					<ul>
-						<li class="title" style="margin-bottom: 49.5px;"><span style="color:#000">+</span> Interactive</li>
-
-
-						<li>- Web Applications</li>
-						<li>- Frontend Engineering</li>
-						<li>- Backend Engineering</li>
-						<li>- System Architecture</li>
-						<li>- Custom Content Management Systems</li>
-						<li>- Native App Development</li>
-						<li>- E-Commerce</li>
-						<li>- API Integration</li>
-					</ul>
-
-					<a class="launch-button" onclick="App.GoToCoords(0,2);">Go To Section <span></span></a>
-
-				</div>
-
-				<div class="column creative" rel="design" data-gs-title="creative">
-
-					<ul>
-						<li class="title" style="margin-bottom: 40.5px;"><span style="color:#000;">+</span> Creative</li>
-
-						<li>- Logo Design</li>
-						<li>- Branding</li>
-						<li>- Illustration</li>
-						<li>- User Experience</li>
-						<li>- Interface Design</li>
-						<li>- Mobile Design</li>
-						<li>- App Design</li>
-						<li>- Responsive Design</li>
-						<li>- Large Scale Print Design</li>
-
-
-					</ul>
-
-					<a class="launch-button" onclick="App.GoToCoords(0,3);">Go To Section <span></span></a>
-
-				</div>
-				<div class="column media" rel="media" data-gs-title="media">
-
-					<ul>
-						<li class="title" style="margin-bottom: 42px;"><span style="color:#000">+</span> Media</li>
-
-
-						<li>- Scriptwriting</li>
-						<li>- Production</li>
-						<li>- Editing</li>
-						<li>- Post Production</li>
-						<li>- Color Correction</li>
-						<li>- Music Composition &amp; Sound Design</li>
-						<li>- 2D &amp; 3D Animation</li>
-						<li>- Live Event Coverage &amp; Streaming</li>
-
-					</ul>
-
-					<a class="launch-button" onclick="App.GoToCoords(0,4);">Go To Section <span></span></a>
-
-				</div>
-
-
-			</div>
-		</div>
-	</div>
-
-</div>
-</li></ul></li><li class="row" id="row-6" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-6-0" style="width: 535px; height: 772px;"><div class="slide" id="team-sub">
-
-	<div class="cover" style="height: 772px;">
-
-		<div class="wrap">
-
-			<div class="team-body">
-				<div class="stars"></div>
-				<img class="team-title" src="/images/team-page/ya-title.png">
-				<div class="moon-bg"></div>
-				<ul class="top-row">
-					<li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/nev.png">
-						<span class="sprite nev">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/tyler.png">
-						<span class="sprite tyler">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/jamied.png">
-						<span class="sprite jamied">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/justin.png">
-						<span class="sprite justin">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/dilly.png">
-						<span class="sprite dilly">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/tucker.png">
-						<span class="sprite tucker">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/adam.png">
-						<span class="sprite adam">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/john2.png">
-						<span class="sprite john">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/mark.png">
-						<span class="sprite mark">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/jason.png">
-						<span class="sprite jason">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/flo.png">
-						<span class="sprite flo">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/hayley.png">
-						<span class="sprite hayley">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/taylor.png">
-						<span class="sprite taylor">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/la.png">
-						<span class="sprite la">
-							<img class="helmet" src="/images/team-sprites/helmet-covered.png">
-						</span>
-					</li><!--
-					--><li onclick="">
-						<img src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/team/pixels/astro.png" id="pixel-astro">
-						<span class="sprite astro">
-
-						</span>
-					</li>
-				</ul>
-			</div>
-
-			<div class="team-footer">
-				<img class="start" onclick="App.GoToCoords(0,9);" style="cursor:pointer;" src="/images/team-page/press-start2.gif">
-				<div class="team-flag"></div>
-			</div>
-
-
-
-		</div>
-	</div>
-</div>
-</li></ul></li><li class="row" id="row-7" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-7-0" style="width: 535px; height: 772px;"><div class="slide" id="clients-page">
-
-	<div class="cover" style="height: 772px;">
-
-		<div class="wrap">
-
-			<div id="client-map-container">
-				<div id="client-map"></div>
-			</div>
-
-			<div class="client-list-bg"></div>
-			<div id="client-list-container">
-				<ul class="yellow">
-					<li>ariana grande</li>
-					<li>atlantic records</li>
-					<li>bell</li>
-					<li>big sean</li>
-					<li>cbc</li>
-					<li>chango</li>
-					<li>childish gambino</li>
-					<li>cirque du soleil</li>
-					<li>cody simpson</li>
-					<li>colony pictures</li>
-					<li>dine alone records</li>
-					<li>distort</li>
-					<li>dove</li>
-					<li>emi</li>
-					<li>entertainment one</li>
-				</ul>
-
-				<ul class="red">
-					<li>get fresh co</li>
-					<li>intelligent creatures</li>
-					<li>jerome jarre</li>
-					<li>justin bieber</li>
-					<li>live nation</li>
-					<li>mozilla</li>
-					<li>myseum of toronto</li>
-					<li>nickelodeon</li>
-					<li>nike</li>
-					<li>pepsi</li>
-					<li>playfight</li>
-					<li>red bull</li>
-					<li>republic records</li>
-					<li>samsung</li>
-					<li>sandals resorts</li>
-				</ul>
-
-				<ul class="blue">
-					<li>scooter braun projects</li>
-					<li>secret location</li>
-					<li>steve aoki</li>
-					<li>stx entertainment</li>
-					<li>trapstar</li>
-					<li>tsn</li>
-					<li>two bit circus</li>
-					<li>universal music</li>
-					<li>university of toronto</li>
-					<li>viacom</li>
-					<li>videri</li>
-					<li>waka flocka flame</li>
-					<li>wantfolio group</li>
-					<li>warner music</li>
-					<li>wiz khalifa</li>
-				</ul>
-			</div>
-
-			<!-- <div id="client-switch" class="">
-
-			</div> -->
-
-
-
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-</li></ul></li><li class="row" id="row-8" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-8-0" style="width: 535px; height: 772px;"><div class="slide" id="press-page">
-
-	<div class="cover" style="height: 772px;">
-
-		<div class="wrap clearfix">
-
-			<div class="column" data-open="url" data-url="http://deadline.com/2016/10/stx-digital-content-deal-the-young-astronauts-1201844673/">
-				<div class="thumb" style="background-image:url(/images/press/deadline_color.png)"></div>
-
-				<div class="detail" style="background-image:url(/images/press/deadline_bg.jpg)">
-
-					<div class="thumb-fg" style="background-image:url(/images/press/deadline_black.png)"></div>
-
-					<div class="quote">"STX Entertainment Partners With Toronto Company The Young Astronauts For Digital Content"</div>
-					<div class="open">»</div>
-
-				</div>
-			</div>
-			<div class="column" data-open="url" data-url="http://time.com/4310761/drake-views-from-the-6-cover-meme/">
-				<div class="thumb" style="background-image:url(/images/press/time_color.png)"></div>
-
-				<div class="detail" style="background-image:url(/images/press/time_bg.jpg)">
-
-					<div class="thumb-fg" style="background-image:url(/images/press/time_black.png)"></div>
-
-					<div class="quote">"Now You Can Add a Tiny Drake to Any Photo"</div>
-					<div class="open">»</div>
-
-				</div>
-			</div>
-			<div class="column" data-open="url" data-url="http://www.huffingtonpost.com/2014/06/11/janelle-monae-heroes_n_5484123.html">
-				<div class="thumb" style="background-image:url(/images/press/huff_color.png)"></div>
-
-				<div class="detail" style="background-image:url(/images/press/huff_bg.jpg)">
-
-					<div class="thumb-fg" style="background-image:url(/images/press/huff_black.png)"></div>
-
-					<div class="quote">"...Inspiring Anthem For Today’s Youth."</div>
-					<div class="open">»</div>
-
-				</div>
-			</div>
-			<div class="column" data-open="url" data-url="http://pitchfork.com/news/64403-watch-ariana-grandes-dangerous-woman-video/">
-				<div class="thumb" style="background-image:url(/images/press/pitchfork_black.png)"></div>
-
-				<div class="detail" style="background-image:url(/images/press/pitchfork_bg.jpg)">
-
-					<div class="thumb-fg" style="background-image:url(/images/press/pitchfork_white.png)"></div>
-
-					<div class="quote">"Watch Ariana Grande's "Dangerous Woman" Video"</div>
-					<div class="open">»</div>
-
-				</div>
-			</div>
-			<div class="column" data-open="url" data-url="http://www.rollingstone.com/music/videos/ariana-grande-channels-shakespeare-in-right-there-20131030">
-				<div class="thumb" style="background-image:url(/images/press/rollingstone_color.png)"></div>
-
-				<div class="detail" style="background-image:url(/images/press/rollingstone_bg.jpg)">
-
-					<div class="thumb-fg" style="background-image:url(/images/press/rollingstone_white.png)"></div>
-
-					<div class="quote">"...Channels Shakespeare in 'Right There'"</div>
-					<div class="open">»</div>
-
-				</div>
-			</div>
-			<div class="column" data-open="url" data-url="http://www.mtv.com/news/articles/1716709/ariana-grande-right-there-video-secrets.jhtml">
-				<div class="thumb" style="background-image:url(/images/press/mtv_color.png)"></div>
-
-				<div class="detail" style="background-image:url(/images/press/mtv_bg.jpg)">
-
-					<div class="thumb-fg" style="background-image:url(/images/press/mtv_white.png)"></div>
-
-					<div class="quote">"Video masterminds, the Young Astronauts..."</div>
-					<div class="open">»</div>
-
-				</div>
-			</div>
-			<div class="column" data-open="url" data-url="http://www.billboard.com/articles/columns/pop-shop/5657765/ariana-grande-nathan-sykes-share-studio-time-in-almost-is-never">
-				<div class="thumb" style="background-image:url(/images/press/billboard_color.png)"></div>
-
-				<div class="detail" style="background-image:url(/images/press/billboard_bg.jpg)">
-
-					<div class="thumb-fg" style="background-image:url(/images/press/billboard_white.png)"></div>
-
-					<div class="quote">"...a delicate music video."</div>
-					<div class="open">»</div>
-
-				</div>
-			</div>
-			<div class="column" data-open="url" data-url="http://www.complexmag.ca/sports/2013/12/nba-jerseys-redesigned-donda-supreme-google-hood-by-air">
-				<div class="thumb" style="background-image:url(/images/press/complex_black.png)"></div>
-
-				<div class="detail" style="background-image:url(/images/press/complex_bg.jpg)">
-
-					<div class="thumb-fg" style="background-image:url(/images/press/complex_white.png)"></div>
-
-					<div class="quote">"...they called in a bunch of dope designers and let them have their way..."</div>
-					<div class="open">»</div>
-
-				</div>
-			</div>
-
-			<div class="featured-press">
-				<div id="featured-press-title">
-				<h3>Featured Press</h3>
-				<h4>CBC: On The Money: Young Astronauts "Shooting for the Stars"</h4>
-				</div>
-				<div id="video_214390164" data-vimeo-initialized="true"><iframe src="https://player.vimeo.com/video/214390164?app_id=122963" width="900" height="506" frameborder="0" title="CBC: On The Money: Young Astronauts &quot;Shooting for the Stars&quot;" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe></div>
-
-				<div id="close-featured-press">See More Press</div>
-
-			</div>
-
-		</div>
-
-
-
-
-	</div>
-
-</div>
-
-<script>
-
-	App.vimeoPlayers['player_214390164'] = new Vimeo.Player('video_214390164', {id: 214390164, width: 900 });
-
-	var color_options = ['#d4ca27', '#5e95c5', '#cf3937'];
-	App.vimeoPlayers['player_214390164'].setColor(color_options[Math.floor(Math.random()*color_options.length)]);
-
-	App.vimeoPlayers['player_214390164'].on('play', function() {
-		window.focus();
-	});
-
-	$("#close-featured-press").on('click', function() {
-		App.vimeoPlayers['player_214390164'].pause();
-		$(".featured-press").fadeOut(300);
-	});
-
-</script>
-</li></ul></li><li class="row" id="row-9" style="height: 772px; left: 0px; transition-duration: 0.5s;"><ul><li class="cell" id="cell-9-0" style="background: rgb(0, 0, 0); width: 535px; height: 772px;"><div class="slide" id="contact">
-
-	<div class="cover" style="height: 772px;">
-
-		<div class="contact-bg">
-			<video loop="true" width="100%" height="100%" preload="meta" data-w="1280" data-h="720" style="width: auto; height: 717px; margin-top: 0px; margin-left: -369.5px;">
-				<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/contact.webm" type="video/webm">
-				<source src="https://s3.amazonaws.com/cdn.theyoungastronauts.com/media/contact.mp4" type="video/mp4">
-
-				<img src="video-thumbs/contact.jpg">
-			</video>
-
-		</div>
-
-		<div class="wrap">
-
-			<div class="contact-content">
-
-				<div class="contact-header">
-					<span>+</span> Inquiries
-				</div>
-
-				<div class="contact-row">
-					<div class="contact-left">
-						<span class="contact-label">Work With Us</span>
-						<span class="contact-address"><a href="mailto:hey@theyoungastronauts.com" target="_blank">hey@theyoungastronauts.com</a></span>
-					</div>
-
-					<div class="contact-right">+</div>
-				</div>
-
-				<div class="contact-row">
-					<div class="contact-left">
-						<span class="contact-label">Press Inquiries</span>
-						<span class="contact-address"><a href="mailto:press@theyoungastronauts.com" target="_blank">press@theyoungastronauts.com</a></span>
-					</div>
-
-					<div class="contact-right">+</div>
-				</div>
-
-				<div class="contact-row">
-					<div class="contact-left">
-						<span class="contact-label">Partner With Us</span>
-						<span class="contact-address"><a href="mailto:partners@theyoungastronauts.com" target="_blank">partners@theyoungastronauts.com</a></span>
-					</div>
-
-					<div class="contact-right">+</div>
-				</div>
-
-				<div class="contact-row">
-					<div class="contact-left">
-						<span class="contact-label">Job Inquiries</span>
-						<span class="contact-address"><a href="mailto:jobs@theyoungastronauts.com" target="_blank">jobs@theyoungastronauts.com</a></span>
-					</div>
-
-					<div class="contact-right">+</div>
-				</div>
-
-				<div class="contact-row">
-					<div class="contact-left social">
-						<div class="contact-fb"><a href="https://www.facebook.com/theyoungastros" target="_blank"></a></div>
-						<div class="contact-tw"><a href="https://twitter.com/theyoungastros" target="_blank"></a></div>
-						<div class="contact-in"><a href="http://instagram.com/theyoungastros" target="_blank"></a></div>
-					</div>
-
-					<div class="contact-right">+</div>
-				</div>
-
-			</div>
-
-
-			<div class="contact-content-mobile">
-				<p>Send Inquiries To <a href="mailto:hey@theyoungastronauts.com">hey@theyoungastronauts.com</a></p>
-			</div>
-
-			<div class="logo" style="opacity: 1;"></div>
-		</div>
-	</div>
-</div>
-</li></ul></li></ul></div>
-    <div class="footer" style="width: 535px;">
-        <div class="footer-links">
-            <a href="/">© 2018 The Young Astronauts Corp.</a>
-            <a href="/terms" target="_blank">Terms</a>
-            <a href="/privacy" target="_blank">Privacy</a>
-        </div>
-<!-- BOTTOM-MENU -->
-        <div class="bottom" style="height: 22.5px;">
-    	    <ul id="social">
-		        <li class="fb"><a href="https://www.facebook.com/theyoungastronauts" target="_blank">Facebook</a></li>
-		        <li class="tw"><a href="https://twitter.com/TheYoungAstros" target="_blank">Twitter</a></li>
-		        <li class="in"><a href="http://instagram.com/TheYoungAstros/" target="_blank">Instagram</a></li>
-		    </ul>
-            <div class="bottom-wrap center clearfix">
-                <ul class="sub-menu"></ul>
-
-                <ul class="footer-thumbs" style="width: 0px; display: none;">
-                	<li class="thumb">
-                		<div class="overlay" style="background-color:rgba(0,0,0,0.2);"></div>
-                        <h4></h4>
-                		<h5></h5>
-                	</li>
-                	<li class="thumb">
-                		<div class="overlay"></div>
-                		<h4></h4>
-                        <h5></h5>
-
-                	</li>
-                	<li class="thumb">
-                		<div class="overlay"></div>
-                		<h4></h4>
-                        <h5></h5>
-
-                	</li>
-                	<li class="thumb">
-                		<div class="overlay"></div>
-                		<h4></h4>
-                        <h5></h5>
-
-                	</li>
-                </ul>
-
-
-
-            </div>
-
-
-
-        </div>
-<!-- /BOTTOM MENU -->
-
-
-
-    </div>
-
-    <div class="hud">
-        <div class="map"><ul class="mapGrid"><li class="mapRow" id="mapRow-0"><ul><li class="mapCell active" data-x="0" data-y="0" id="mapCell-0-0" data-hint=""></li></ul></li><li class="mapRow" id="mapRow-1"><ul><li class="mapCell" data-x="0" data-y="1" id="mapCell-1-0" data-hint="Featured Project"></li></ul></li><li class="mapRow" id="mapRow-2"><ul><li class="mapCell" data-x="0" data-y="2" id="mapCell-2-0" data-hint="Interactive Reel"></li><li class="mapCell" data-x="1" data-y="2" id="mapCell-2-1" data-hint="Wantfolio"></li><li class="mapCell" data-x="2" data-y="2" id="mapCell-2-2" data-hint="Wantfolio Mobile"></li><li class="mapCell" data-x="3" data-y="2" id="mapCell-2-3" data-hint="Wantfolio Mobile"></li><li class="mapCell" data-x="4" data-y="2" id="mapCell-2-4" data-hint="Wantfolio Desktop"></li><li class="mapCell" data-x="5" data-y="2" id="mapCell-2-5" data-hint="Wantfolio Desktop"></li><li class="mapCell" data-x="6" data-y="2" id="mapCell-2-6" data-hint="Drake's Views"></li><li class="mapCell" data-x="7" data-y="2" id="mapCell-2-7" data-hint="Drakes's Views Mobile"></li><li class="mapCell" data-x="8" data-y="2" id="mapCell-2-8" data-hint="Drakes's Views Desktop"></li><li class="mapCell" data-x="9" data-y="2" id="mapCell-2-9" data-hint="Drakes's Views Creations"></li><li class="mapCell" data-x="10" data-y="2" id="mapCell-2-10" data-hint="Myseum"></li><li class="mapCell" data-x="11" data-y="2" id="mapCell-2-11" data-hint=""></li><li class="mapCell" data-x="12" data-y="2" id="mapCell-2-12" data-hint=""></li><li class="mapCell" data-x="13" data-y="2" id="mapCell-2-13" data-hint=""></li><li class="mapCell" data-x="14" data-y="2" id="mapCell-2-14" data-hint="Web"></li><li class="mapCell" data-x="15" data-y="2" id="mapCell-2-15" data-hint=""></li><li class="mapCell" data-x="16" data-y="2" id="mapCell-2-16" data-hint=""></li><li class="mapCell" data-x="17" data-y="2" id="mapCell-2-17" data-hint=""></li><li class="mapCell" data-x="18" data-y="2" id="mapCell-2-18" data-hint=""></li><li class="mapCell" data-x="19" data-y="2" id="mapCell-2-19" data-hint="Games"></li><li class="mapCell" data-x="20" data-y="2" id="mapCell-2-20" data-hint=""></li><li class="mapCell" data-x="21" data-y="2" id="mapCell-2-21" data-hint=""></li></ul></li><li class="mapRow" id="mapRow-3"><ul><li class="mapCell" data-x="0" data-y="3" id="mapCell-3-0" data-hint="Ariana Grande"></li><li class="mapCell" data-x="1" data-y="3" id="mapCell-3-1" data-hint="Ariana Grande Album Artwork"></li><li class="mapCell" data-x="2" data-y="3" id="mapCell-3-2" data-hint="Ariana Grande Web &amp; Mobile"></li><li class="mapCell" data-x="3" data-y="3" id="mapCell-3-3" data-hint="Ariana Grande Mobile App Concept"></li><li class="mapCell" data-x="4" data-y="3" id="mapCell-3-4" data-hint="Ariana Grande Marketing"></li><li class="mapCell" data-x="5" data-y="3" id="mapCell-3-5" data-hint="Ariana Grande Photography"></li><li class="mapCell" data-x="6" data-y="3" id="mapCell-3-6" data-hint="Ariana Grande Photography"></li><li class="mapCell" data-x="7" data-y="3" id="mapCell-3-7" data-hint="Ariana Grande Merch"></li><li class="mapCell" data-x="8" data-y="3" id="mapCell-3-8" data-hint="Schitt's Creek"></li><li class="mapCell" data-x="9" data-y="3" id="mapCell-3-9" data-hint="Schitt's Creek Poster Design"></li><li class="mapCell" data-x="10" data-y="3" id="mapCell-3-10" data-hint="Schitt's Creek Poster Design"></li><li class="mapCell" data-x="11" data-y="3" id="mapCell-3-11" data-hint="Schitt's Creek Marketing"></li><li class="mapCell" data-x="12" data-y="3" id="mapCell-3-12" data-hint="Schitt's Creek Marketing"></li><li class="mapCell" data-x="13" data-y="3" id="mapCell-3-13" data-hint="Schitt's Creek Marketing"></li><li class="mapCell" data-x="14" data-y="3" id="mapCell-3-14" data-hint="Schitt's Creek Marketing"></li><li class="mapCell" data-x="15" data-y="3" id="mapCell-3-15" data-hint="Schitt's Creek Marketing"></li><li class="mapCell" data-x="16" data-y="3" id="mapCell-3-16" data-hint="Schitt's Creek Marketing"></li></ul></li><li class="mapRow" id="mapRow-4"><ul><li class="mapCell" data-x="0" data-y="4" id="mapCell-4-0" data-hint="Demo Reel"></li><li class="mapCell" data-x="1" data-y="4" id="mapCell-4-1" data-hint="Music Videos"></li><li class="mapCell" data-x="2" data-y="4" id="mapCell-4-2" data-hint="undefined"></li><li class="mapCell" data-x="3" data-y="4" id="mapCell-4-3" data-hint="undefined"></li><li class="mapCell" data-x="4" data-y="4" id="mapCell-4-4" data-hint="undefined"></li><li class="mapCell" data-x="5" data-y="4" id="mapCell-4-5" data-hint="undefined"></li><li class="mapCell" data-x="6" data-y="4" id="mapCell-4-6" data-hint="Commercials"></li><li class="mapCell" data-x="7" data-y="4" id="mapCell-4-7" data-hint="undefined"></li><li class="mapCell" data-x="8" data-y="4" id="mapCell-4-8" data-hint="undefined"></li><li class="mapCell" data-x="9" data-y="4" id="mapCell-4-9" data-hint="Animation"></li><li class="mapCell" data-x="10" data-y="4" id="mapCell-4-10" data-hint="undefined"></li><li class="mapCell" data-x="11" data-y="4" id="mapCell-4-11" data-hint="undefined"></li></ul></li><li class="mapRow" id="mapRow-5"><ul><li class="mapCell" data-x="0" data-y="5" id="mapCell-5-0" data-hint="Services"></li></ul></li><li class="mapRow" id="mapRow-6"><ul><li class="mapCell" data-x="0" data-y="6" id="mapCell-6-0" data-hint="Team"></li></ul></li><li class="mapRow" id="mapRow-7"><ul><li class="mapCell" data-x="0" data-y="7" id="mapCell-7-0" data-hint="Clients"></li></ul></li><li class="mapRow" id="mapRow-8"><ul><li class="mapCell" data-x="0" data-y="8" id="mapCell-8-0" data-hint="Press"></li></ul></li><li class="mapRow" id="mapRow-9"><ul><li class="mapCell" data-x="0" data-y="9" id="mapCell-9-0" data-hint="Contact"></li></ul></li></ul><div class="mapHint">&nbsp;</div></div>
-    </div>
-
-    <div class="arrow-container">
-        <div class="arrow arrow-left auto-hide" style="opacity: 0.5;"></div>
-        <div class="arrow arrow-right auto-hide" style="opacity: 0.5;"></div>
-    </div>
-
-<div class="loader" style="display: none;">
-    <div class="cube1"></div>
-    <div class="cube2"></div>
-    <div class="cube3"></div>
-    <div class="cube4"></div>
-    <div class="cube5"></div>
-</div>
-
-
-<ul id="social-links">
-    <li class="fb"><a href="https://www.facebook.com/theyoungastronauts" target="_blank">Facebook</a></li>
-    <li class="tw"><a href="https://twitter.com/TheYoungAstros" target="_blank">Twitter</a></li>
-    <li class="in"><a href="http://instagram.com/TheYoungAstros/" target="_blank">Instagram</a></li>
-</ul>
-
-<ul class="progress-indicator">
-    <li id="progress-home" class="current"><div></div></li>
-    <li id="progress-featured"><div></div></li>
-    <li id="progress-interactive"><div></div></li>
-    <li id="progress-creative"><div></div></li>
-    <li id="progress-media"><div></div></li>
-    <li id="progress-services"><div></div></li>
-    <li id="progress-team"><div></div></li>
-    <li id="progress-clients"><div></div></li>
-    <li id="progress-press"><div></div></li>
-    <li id="progress-contact"><div></div></li>
-</ul>
-
-
-<div class="fullscreen-menu" style="background-color: rgb(136, 200, 122);">
-
-    <ul class="rolodex initialized" id="rolodex">
-        <li id="rolodex-featured" data-color="#88c87a" class="current" style="opacity: 1; transform: scale(1); margin-top: 351px;">Featured</li>
-        <li id="rolodex-interactive" data-color="#5e95c5" style="opacity: 0.65; transform: scale(0.75); margin-top: 0px;">Interactive</li>
-        <li id="rolodex-creative" data-color="#cf3937" style="opacity: 0.3; transform: scale(0.5); margin-top: 0px;">Creative</li>
-        <li id="rolodex-media" data-color="#d4ca27" style="opacity: -0.05; transform: scale(0.25); margin-top: 0px;">Media</li>
-        <li id="rolodex-services" data-color="#bbb" style="opacity: -0.4; transform: scale(0); margin-top: 0px;">Services</li>
-        <li id="rolodex-team" data-color="#fd5f02" style="opacity: -0.75; transform: scale(-0.25); margin-top: 0px;">Team</li>
-        <li id="rolodex-clients" data-color="#5b52a3" style="opacity: -1.1; transform: scale(-0.5); margin-top: 0px;">Clients</li>
-        <li id="rolodex-press" data-color="#ed9cf0" style="opacity: -1.45; transform: scale(-0.75); margin-top: 0px;">Press</li>
-        <li id="rolodex-contact" data-color="#333333" style="opacity: -1.8; transform: scale(-1); margin-top: 0px;">Contact</li>
-    </ul>
-
-
-</div>
-<div id="top-right-corner"></div>
-<div id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-
-
-
-   <!-- include js -->
-
-    <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vfl8_u944/www-widgetapi.js" async=""></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-43940726-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-
-
-
-            <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
-        <script type="text/javascript" src="https://player.vimeo.com/api/player.js"></script>
-        <script type="text/javascript" src="build/js/all.min.js?v=2.8" id="mainScript" data-api-version="1492025819" data-version="2.8"></script>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
     
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
 
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
 
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>Jane Doe saved us from a web disaster.</p><br>
+    
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than Jane Doe.</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
 
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
 
-</body></html>
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
