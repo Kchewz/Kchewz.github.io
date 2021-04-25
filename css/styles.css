@@ -1,0 +1,572 @@
+.open-button {
+  background-color: #333;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 230px;
+  height: 50px;
+  white-space: normal;
+  border-radius: 20px;
+}
+
+.info-popup {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 11px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  max-width: 300px;
+  padding: 6px;
+  background-color: #f4f4f4;
+  width: 220px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.close-button {
+  color: white;
+  padding: 15px 19px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:3px;
+  /* opacity: 0.8; */
+  background-color: #fd256e;
+  border-radius: 20px;
+  /*position: fixed;*/
+}
+
+.popup-header {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.30em;
+  margin-block-end: 0.30em;
+  /*margin-inline-start: 0px;
+  margin-inline-end: 0px;*/
+  font-weight: bold;
+}
+
+.popup-label {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  margin-block-start: 0.02em;
+  margin-block-end: 0.20em;
+}
+
+
+.newImages {
+  font-size: 0;
+  padding: 0px 0px 0px 0px; 
+  margin: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column-td {
+  text-align: center;
+}
+
+.fadein { 
+  position: relative; 
+  height: 400px; 
+  width: auto; 
+}
+
+.fadein img {
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  height: 350px;
+  width: relative;
+}
+
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_chat */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  padding: 0px;
+  margin: 0px;
+  /* background-color: #6D214F; */
+  width:100%;
+  height:100vh;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5
+}
+
+.landing-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/collage.png');
+  background-repeat: repeat;
+}
+
+.landing-footer {
+  position: fixed;
+  left: 1%;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: left;
+}
+
+.landing-title {
+  text-align: center;
+  /* width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; */
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height:auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.content {
+  /* position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; */
+  margin: 10px;
+  /* left: 10px; */
+  min-height: calc(100vh - 70px);
+}
+
+.footer {
+  margin-left: 10px;
+  height: 65px;
+}
+
+.remove-margin {
+  display: block;
+  margin: 0px;
+}
+
+.formats-table, .formats-table td, .formats-table th {
+  border: 1px solid black;
+}
+
+.formats-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/**/
+.active {
+  color: #fd256e;
+}
+
+/* https://freefrontend.com/css-buttons/ */
+/* https://codepen.io/ahmadbassamemran/pen/PMqayW */
+.wrapper {
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height:auto;
+  margin-bottom: -50px;
+}
+.homebutton{
+  width:200px;
+  height:70px;
+  /* background: linear-gradient(to left top, #c32c71 50%, #b33771 50%); */
+  background: linear-gradient(to left top, #333 50%, #111 50%);
+  /* background-color: black; */
+  border-style: none;
+  color:#fff;
+  font-size: 23px;
+  /* letter-spacing: 3px; */
+  /* font-family: 'Lato'; */
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+  transition: all .5s;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+  border-radius: 20px
+}
+button span{
+  position: absolute;
+  display: block;
+}
+button span:nth-child(1){
+  height: 3px;
+  width:200px;
+  top:0px;
+  left:-200px;
+  background: linear-gradient(to right, rgba(0,0,0,0), #c32c71);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span1 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes span1{
+  0%{
+      left:-200px
+  }
+  100%{
+      left:200px;
+  }
+}
+button span:nth-child(2){
+  height: 70px;
+  width: 3px;
+  top:-70px;
+  right:0px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #c32c71);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span2 2s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes span2{
+  0%{
+      top:-70px;
+  }
+  100%{
+      top:70px;
+  }
+}
+button span:nth-child(3){
+  height:3px;
+  width:200px;
+  right:-200px;
+  bottom: 0px;
+  background: linear-gradient(to left, rgba(0,0,0,0), #c32c71);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  animation: span3 2s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes span3{
+  0%{
+      right:-200px;
+  }
+  100%{
+      right: 200px;
+  }
+}
+
+button span:nth-child(4){
+  height:70px;
+  width:3px;
+  bottom:-70px;
+  left:0px;
+  background: linear-gradient(to top, rgba(0,0,0,0), #c32c71);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: span4 2s linear infinite;
+  animation-delay: 4s;
+}
+@keyframes span4{
+  0%{
+      bottom: -70px;
+  }
+  100%{
+      bottom:70px;
+  }
+}
+
+.home:hover{
+  transition: all .5s;
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+.home:hover span{
+  animation-play-state: paused;
+}
+
+
+/* https://zellwk.com/blog/mongoose-subdocuments/ */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: freight-sans-pro, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #343434;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.15;
+  /* font-family: freight-display-pro, serif; */
+  font-weight: 500;
+  color: #000000
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  /* font-family: freight-text-pro, serif; */
+  font-weight: 500;
+  color: #000000
+}
+
+h3 {
+  color: var(--theme-color);
+  font-size: 1.2rem;
+  line-height: 1.1;
+  /* font-family: freight-sans-condensed-pro, sans-serif; */
+  font-weight: 600;
+  letter-spacing: .005em;
+  font-feature-settings: "liga" 1, "smcp" 1
+}
+
+a {
+  text-decoration: none
+}
+
+strong {
+  font-weight: 600
+}
+
+em {
+  font-style: italic
+}
+
+code {
+  display: inline-block;
+  /* margin: 0 .25em; */
+  /* padding: 0 .5em; */
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  color: #343434;
+  font-size: .69444rem;
+  line-height: 1.4;
+  font-family: Fira Mono, monospace;
+  font-weight: 400;
+  font-feature-settings: "liga" 0;
+  color: inherit
+}
+
+code:first-child {
+  margin-left: 0
+}
+
+code:last-child {
+  margin-right: 0
+}
+
+pre {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: #343434;
+  white-space: pre-wrap
+}
+
+pre code {
+  /* display: block; */
+  font-size: .69444rem;
+  line-height: 1.58;
+  font-family: Fira Mono, monospace;
+  font-weight: 400;
+  margin: 0;
+  /* padding: .7rem 1.05rem; */
+  border: 0;
+  background-color: transparent;
+  color: #eee
+}
+
+:root {
+  --theme-color: #fd256e
+}
+
+body.page-salespage {
+  border-top: 0
+}
+
+main {
+  margin-top: 2.8rem
+}
+
+input[name*=name] {
+  text-transform: capitalize
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: .75em;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #777;
+  font-size: .83333rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #343434;
+  min-height: 8.4rem
+}
+
+textarea::placholder {
+  color: #777
+}
+
+textarea:focus {
+  border-color: #777
+}
+
+[class*=language-] {
+  background: #343434;
+  text-align: left;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2
+}
+
+:not(pre)>[class*=language-],
+[class*=language-] {
+  background: #2d2d2d
+}
+
+.token.block-comment,
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+  color: #999
+}
+
+.token.punctuation {
+  color: #ccc
+}
+
+.token.attr-name,
+.token.deleted,
+.token.namespace,
+.token.tag {
+  color: #fd256e
+}
+
+.token.function-name {
+  color: #6196cc
+}
+
+.token.boolean,
+.token.function,
+.token.number {
+  color: #f08d49
+}
+
+.token.class-name,
+.token.constant,
+.token.property,
+.token.symbol {
+  color: #6196cc
+}
+
+.token.atrule,
+.token.builtin,
+.token.important,
+.token.keyword,
+.token.selector {
+  color: #cc99cd
+}
+
+.token.attr-value,
+.token.char,
+.token.regex,
+.token.string,
+.token.variable {
+  color: #7ec699
+}
+
+.token.entity,
+.token.operator,
+.token.url {
+  color: #67cdcc
+}
+
+.token.bold,
+.token.important {
+  font-weight: 700
+}
+
+.token.italic {
+  font-style: italic
+}
+
+.token.entity {
+  cursor: help
+}
+
+.token.inserted {
+  color: green
+}
+
+.token.deleted-sign {
+  display: block;
+  background-color: rgba(255, 0, 0, .2)
+}
+
+.token.inserted-sign {
+  display: block;
+  background-color: rgba(0, 255, 128, .2)
+}
